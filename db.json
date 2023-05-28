@@ -1,0 +1,27 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "authorId": 123,
+      "title": "Recipe 1",
+      "shortDescription": "Short description",
+      "cookingTime": 60,
+      "productsNeeded": ["Flour", "Eggs", "Salt"],
+      "imageUrl": "https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcS8HqbgRrafJwQWjnmkhw2j8wGgRY2AX8Wt3tgI0kbpQ8opW-2VuraHm9k9jp1-N_6N",
+      "fullDescription": "Full description",
+      "tags": ["Cake", "Delicious"],
+      "dateOfCreation": "23-05-23",
+      "dateOfLastModification": "23-05-23"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
