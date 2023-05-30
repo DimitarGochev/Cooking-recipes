@@ -1,27 +1,63 @@
 {
   "recipes": [
     {
-      "id": 1,
-      "authorId": 123,
-      "title": "Recipe 1",
+      "title": "Cake",
       "shortDescription": "Short description",
-      "cookingTime": 60,
-      "productsNeeded": ["Flour", "Eggs", "Salt"],
-      "imageUrl": "https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcS8HqbgRrafJwQWjnmkhw2j8wGgRY2AX8Wt3tgI0kbpQ8opW-2VuraHm9k9jp1-N_6N",
+      "cookingTime": "60",
+      "productsNeeded": "Flour,Eggs,Salt",
+      "imageURL": "https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcS8HqbgRrafJwQWjnmkhw2j8wGgRY2AX8Wt3tgI0kbpQ8opW-2VuraHm9k9jp1-N_6N",
       "fullDescription": "Full description",
-      "tags": ["Cake", "Delicious"],
-      "dateOfCreation": "23-05-23",
-      "dateOfLastModification": "23-05-23"
-    }
-  ],
-  "comments": [
-    {
+      "tags": "Cake,Delicious",
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "dateOfLastModification": "2023-05-30T14:02:40.812Z"
+    },
+    {
+      "title": "Steak",
+      "shortDescription": "Delicious steak",
+      "cookingTime": "60",
+      "productsNeeded": "Beef, salt",
+      "imageURL": "https://th.bing.com/th/id/OIP.Ua_IOmOR9bFWFvryTxk0oAHaE8?pid=ImgDet&rs=1",
+      "fullDescription": "Delicious steak",
+      "tags": "Meat",
+      "id": 2,
+      "dateOfLastModification": "2023-05-30T13:44:53.035Z"
+    },
+    {
+      "title": "Caesar salad",
+      "shortDescription": "Salad",
+      "cookingTime": "25",
+      "productsNeeded": "Garlic, Mayonnaise, Parmesan Cheese",
+      "imageURL": "https://i.pinimg.com/originals/cc/3b/59/cc3b59bf5e8850d946a936d5a5c49da7.jpg",
+      "fullDescription": "Very tasty salad",
+      "tags": "non-vegan",
+      "author": "Dimitar",
+      "dateOfCreation": "2023-05-30T13:48:33.666Z",
+      "id": 3
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "users": [
+    {
+      "name": "Ivan Petrov",
+      "username": "ivpetrov",
+      "password": "",
+      "gender": "male",
+      "role": "Admin",
+      "imageURL": "https://th.bing.com/th/id/R.64dbe13c47df9dd9a772c8faced08ecf?rik=EQY2KMxPnEWV5Q&riu=http%3a%2f%2fmedia.istockphoto.com%2fphotos%2fhandsome-man-picture-id532010167%3fk%3d6%26m%3d532010167%26s%3d612x612%26w%3d0%26h%3dmkxCgM5XNEMQKukGUl0g1CtLwTGACNfjGSmPZXGX6GA%3d&ehk=0VESeSBnquMi3PDyvd4iJqTcrubpo6HuiqpFO6UvftQ%3d&risl=&pid=ImgRaw&r=0",
+      "shortDescription": "My short description",
+      "status": "active",
+      "id": 1
+    },
+    {
+      "name": "Mihail Todorov",
+      "username": "mouse",
+      "password": "123456",
+      "gender": "male",
+      "role": "User",
+      "imageURL": "https://www.welcomewildlife.com/wp-content/uploads/2016/10/Wood-mouse-apodemus-sylvaticus-e1521916778551.jpg",
+      "shortDescription": "I'm a mouse!",
+      "status": "active",
+      "id": 2,
+      "dateOfLastModification": "2023-05-30T12:42:47.521Z"
+    }
+  ]
 }

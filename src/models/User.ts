@@ -6,12 +6,12 @@ export type AccountStatus = 'active' | 'suspended' | 'deactivated';
 export class UserCreateDto {
     constructor(
         public name: string,
-        public userName: string,
+        public username: string,
         public gender: string,
         public role: UserRoles,
-        public imageUrl: string,
+        public imageURL: string,
         public shortDescription: string,
-        public accStatus: AccountStatus,
+        public status: AccountStatus,
         public dateOfCreation: Date,
         public dateOfLastModification: Date
     ) { }
@@ -21,15 +21,15 @@ export class User extends UserCreateDto {
     constructor(
         public id: IdType,
         name: string,
-        userName: string,
+        username: string,
         gender: string,
         role: UserRoles,
-        imageUrl: string,
+        imageURL: string,
         shortDescription: string,
-        accStatus: AccountStatus,
+        status: AccountStatus,
         dateOfCreation: Date,
         dateOfLastModification: Date
     ) {
-        super(name, userName, gender, role, imageUrl, shortDescription, accStatus, dateOfCreation, dateOfLastModification);
+        super(name, username, gender, role, imageURL, shortDescription, status, dateOfCreation, dateOfLastModification);
     }
 }

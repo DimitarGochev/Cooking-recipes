@@ -1,19 +1,26 @@
+import { AppBar, Box, Container, Typography } from '@mui/material';
 import * as React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
+import ResponsiveAppBar from '../widgets/AppBar';
 
 interface LayoutProps {
 }
 
 export const Layout = (props: LayoutProps) => {
     return (
-        <div>
-            <h1>Cooking Recipes App</h1>
-            <nav>
-                <NavLink className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending" : ""} to="/home">Home</NavLink> | &nbsp;
-                <NavLink className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending" : ""} to="/users">Users</NavLink> | &nbsp;
-                <NavLink className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending" : ""} to="/recipes">Recipes</NavLink> | &nbsp;
-            </nav>
+        <Box sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            placeContent: 'center',
+            alignItems: 'center'
+        }}>
+            <ResponsiveAppBar></ResponsiveAppBar>
             <Outlet />
-        </div>
+            <Box component={'footer'} sx={{
+                height: '64px',
+                width: '100%',
+                backgroundColor: '#1976d2'
+            }}></Box>
+        </Box>
     );
 };
